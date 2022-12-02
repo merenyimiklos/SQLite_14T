@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,6 +33,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AdatrogzitesActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        buttonAdatokModositasa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ModositasActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        buttonAdatokTorlese.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, TorlesActivity.class);
                 startActivity(intent);
                 finish();
             }

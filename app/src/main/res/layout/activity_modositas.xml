@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ModositasActivity">
+
+    <EditText
+        android:id="@+id/editTextIdMod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextVezNevMod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vezetéknév" />
+
+    <EditText
+        android:id="@+id/editTextKerNevMod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Keresztnév" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jegy"
+        android:id="@+id/editTextJegyMod"
+        android:inputType="number"
+        android:maxLength="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Módosítás"
+        android:id="@+id/buttonModosit"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vissza"
+        android:id="@+id/buttonVisszaMod"/>
+
+</LinearLayout>
